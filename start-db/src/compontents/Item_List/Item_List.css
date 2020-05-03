@@ -1,0 +1,20 @@
+
+.Item_list {
+  width: 40rem;
+  padding: 1rem 1rem .1rem 1rem;
+  border-radius: 5px;
+  background-color: rgba(233, 201, 201, 0.3);
+}
+
+.Item_list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+ 
+}
+
+.Item_list ul li {
+  padding: .5rem;
+  border: 1px solid rgba(3, 3, 3, 0.3);
+  border-radius: 5px;
+}

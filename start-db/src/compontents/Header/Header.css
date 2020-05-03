@@ -1,0 +1,33 @@
+.Header {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(193, 224, 231, 0.35);
+  border-radius: 10px;
+}
+
+.Header_logo {
+  margin-right: 2rem;
+}
+
+
+.Header_list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Header_list ul li {
+  line-height: center;
+  list-style: none;
+  margin: 0;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  color: tomato;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.Header_list ul li:hover {
+  background-color: bisque;
+}

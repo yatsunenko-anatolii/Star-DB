@@ -1,0 +1,27 @@
+.Random_planet {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgba(3, 58, 26, 0.3);
+}
+
+.Random_planer_img {
+  margin-right: 1rem;
+  width: 30%;
+  height: 30%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.Random_planet_list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Random_planet_list ul li {
+  padding: .5rem 0 .5rem 0;
+  margin-left: 1rem;
+  border-bottom: 1px solid rgba(12, 207, 93, 0.3);
+  cursor: pointer;
+}
