@@ -19,9 +19,13 @@
   list-style: none;
 }
 
-.Random_planet_list ul li {
+.Random_planet_list .planet_list--item {
   padding: .5rem 0 .5rem 0;
   margin-left: 1rem;
   border-bottom: 1px solid rgba(12, 207, 93, 0.3);
   cursor: pointer;
+}
+
+.planet_list--item .term {
+  color: #d4860b;
 }
