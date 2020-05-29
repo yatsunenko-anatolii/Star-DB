@@ -78,9 +78,8 @@
 .loadingio-spinner-double-ring-fjmj088e11 {
     width: 68px;
     height: 68px;
-    display: inline-block;
     overflow: hidden;
-    background: rgba(47, 79, 79, 0.1);
+    background: rgba(3, 58, 26, 0.01);
 }
 .ldio-enpqq0pygft {
     width: 100%;
@@ -88,7 +87,7 @@
     position: relative;
     transform: translateZ(0) scale(0.68);
     backface-visibility: hidden;
-    transform-origin: 0 0; /* see note above */
+    transform-origin: 0 0;
 }
 .ldio-enpqq0pygft div { box-sizing: content-box; }
 
