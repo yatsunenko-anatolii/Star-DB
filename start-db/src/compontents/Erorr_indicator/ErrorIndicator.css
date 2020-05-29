@@ -1,0 +1,17 @@
+.Error_indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #d4860b;
+}
+
+.Error_indicator img {
+    margin-bottom: .5rem;
+}
+
+
+.Error_indicator .Boom {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
