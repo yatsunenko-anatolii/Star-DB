@@ -27,3 +27,15 @@
   border-bottom: 1px solid rgba(185, 150, 85, 0.44);
   cursor: pointer;
 }
+
+.Person_details_spinner {
+  padding-top: 2rem;
+  border-radius: 5px;
+  background-color: rgba(145, 185, 85, 0.3);
+}
+
+.Person_details_spinner h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: lightcoral;
+}
