@@ -21,8 +21,13 @@ export default class RandomPlanet extends Component {
 
   componentDidMount() {
     this.updatePlanet();
-    setInterval(this.updatePlanet, 2222)
+    this.interval = setInterval(this.updatePlanet, 2222)
   }
+
+  componentWillUnmount() {
+   clearInterval(this.interval)
+  }
+
 
   onPlanetLoaded = (planet) => {
     this.setState({
@@ -76,7 +81,7 @@ const PlanetView = ({ planet }) => {
 
   return (
       <React.Fragment>
-        <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} className="Random_planer_img" alt="Air Spaxe" title="AirSpace"></img>
+        <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} className="Random_planet_img" alt="Air Spaxe" title="AirSpace"></img>
 
         <div className="Random_planet_list">
           <h4>{planetName}</h4>

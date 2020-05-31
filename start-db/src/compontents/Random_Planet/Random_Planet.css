@@ -5,12 +5,20 @@
   background-color: rgba(3, 58, 26, 0.3);
 }
 
-.Random_planer_img {
+.Random_planet_img {
   margin-right: 1rem;
   width: 30%;
   height: 30%;
   background-color: black;
   border-radius: 5px;
+}
+
+.Random_planet_list h4 {
+  font-size: 2rem;
+  font-width: bold;
+  background: linear-gradient(45deg,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .Random_planet_list ul {

@@ -53,28 +53,32 @@ export default class PersonDetails extends Component {
       )
     }
 
-    const {  id, name , gender, birhtYear, eyeColor }  = this.state.person
+    const {  id, name , gender, birthYear, eyeColor, skinColor }  = this.state.person
 
 
 
     return (
       <div className="Person_details">
-        <img src={`https://starwars-visualguide.com/assets/img/species/${id}.jpg`} className="Person_details_img" alt="Air Space" title="AirSpace"></img>
+        <img src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} className="Person_details_img" alt="Air Space" title="AirSpace"></img>
         
         <div className="Person_details_list">
           <h4><span>{name}</span></h4>
           <ul>
             <li>
-              <span>Gender:</span>
+              <span>Gender: </span>
               <span>{gender} </span>
             </li>
             <li>
-              <span>Birth Year:</span>
-              <span>{birhtYear}</span>
+              <span>Birth Year: </span>
+              <span>{birthYear}</span>
             </li>
             <li>
-              <span>Eye Color</span>
+              <span>Eye Color: </span>
               <span>{eyeColor}</span>
+            </li>
+            <li>
+              <span>Skin Color: </span>
+              <span>{skinColor}</span>
             </li>
           </ul>
         </div>

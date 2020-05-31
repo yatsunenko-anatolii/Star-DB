@@ -6,6 +6,14 @@
   background-color: rgba(145, 185, 85, 0.3);
 }
 
+.Person_details h4 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  background: linear-gradient(45deg ,lightskyblue, salmon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .Person_details_img {
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -38,4 +46,25 @@
   margin-bottom: 1rem;
   text-align: center;
   color: lightcoral;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 920px){
+
+  .Person_details {
+    flex-direction: column;
+  }
+  .Person_details .Person_details_img {
+    width: 100%;
+  }
+  .Person_details h4 {
+    font-size: 2rem;
+  }
+
+
 }
