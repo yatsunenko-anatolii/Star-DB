@@ -1,4 +1,4 @@
-import People_Page from "./People_Page";
+import PeoplePage from "./PeoplePage";
 
 
-export default People_Page
+export default PeoplePage
