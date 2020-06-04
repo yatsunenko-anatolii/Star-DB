@@ -1,14 +1,15 @@
+import PersonDetails from "./Person_details";
+import PlanetDetails from "./Planet_details";
+import StarshipDetails from './Starship_details'
+
+
 import {
     PersonList,
     StarshipList,
     PlanetList
 } from "./ItemList";
 
-import {
-    PlanetDetails,
-    PersonDetails,
-    StarshipDetails
-} from "./details";
+
 
 export default {
     PersonList,
