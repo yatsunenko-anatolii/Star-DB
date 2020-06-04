@@ -75,3 +75,4 @@ export default class ItemDetails extends Component {
     )
   }
 }
+

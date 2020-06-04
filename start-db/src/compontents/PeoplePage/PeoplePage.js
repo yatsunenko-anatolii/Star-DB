@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 
-
-
-import ItemList from "../Item_List";
+import {PersonList} from "../sw_components/ItemList";
 import ItemDetails from "../Item_details";
 import RowGrid from "../Row_Grid_Pattern";
 import Record from "../Record/Record";
@@ -10,6 +8,8 @@ import Record from "../Record/Record";
 import SwapiService from "../../services/swapi_service";
 
 import './People_Page.css'
+import {PersonDetails} from "../sw_components/details";
+
 
 
 
@@ -33,28 +33,17 @@ export default class PeoplePage extends Component {
     render() {
 
         const itemList = (
-            <ItemList onItemSelected={this.onPersonSelected}
+            <PersonList onItemSelected={this.onPersonSelected}
                       getData={this.swapiService.getAllPeople}>
 
                {(i) => (
                 `${i.name}( ${i.birthYear})`
             )
             }
-            </ItemList>
+            </PersonList>
         )
 
-        const personDetails = (
-            <ItemDetails itemId={this.state.selectedPerson}
-                         getData={this.swapiService.getPerson}
-                         getImgUrl={this.swapiService.getPersonImage} >
-
-
-                <Record field='gender' label='Gender:'/>
-                <Record field='eyeColor' label='Eye Color: '/>
-                <Record field='birthYear' label='Birth Year: '/>
-                <Record field='skinColor' label='Skin Color: '/>
-            </ItemDetails>
-        )
+        const personDetails = <PersonDetails itemId={this.state.selectedPerson} />
 
         return <RowGrid left={itemList} right={personDetails}/>
 
