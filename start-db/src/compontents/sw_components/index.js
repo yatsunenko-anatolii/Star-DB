@@ -11,7 +11,7 @@ import {
 
 
 
-export default {
+export  {
     PersonList,
     PlanetList,
     StarshipList,

@@ -3,7 +3,6 @@ import React from "react";
 import ItemDetails from "../Item_details";
 import Record from "../Record";
 
-
 import { withSwapiService } from '../hoc-element'
 
 
@@ -32,4 +31,4 @@ const mapMethodsToProps = (swapiService) => {
 
 }
 
-export default withSwapiService(PersonDetails, mapMethodsToProps)
+export default withSwapiService(mapMethodsToProps)(PersonDetails)
