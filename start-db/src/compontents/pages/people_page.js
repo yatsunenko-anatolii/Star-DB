@@ -20,7 +20,7 @@ export default class PeoplePage extends Component{
         return (
             <RowGrid
                     left={<PersonList onItemSelected={this.onItemSelected}/>}
-                     right={<PersonDetails itemId={selectedItem}/>}   />
+                     right={<PersonDetails itemId={selectedItem}/>}/>
         )
 }
 

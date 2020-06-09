@@ -42,7 +42,7 @@ export default class ItemDetails extends Component {
 
   render() {
 
-    const { item, image } =this.state
+    const { item, image } = this.state
 
     if (!item) {
 

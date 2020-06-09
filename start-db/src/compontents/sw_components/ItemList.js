@@ -1,26 +1,17 @@
 import React from "react";
 
 import ItemList from "../Item_List/Item_List";
-import {withData, withSwapiService} from '../hoc-element'
+import {
+    withData, 
+    withSwapiService, 
+    withChildFuntion,
+    compose
+  }  from '../hoc-element'
 
 
 
+const renderName = ({ name }) => <span>{name}</span>
 
-const withChildFuntion = (Wrapped, fun) => {
-
-    return (props) => {
-        return (
-            <Wrapped {...props}>
-                {fun}
-            </Wrapped>
-        )
-    }
-}
-
-const ListWithChildren = withChildFuntion(
-    ItemList,
-    ({ name }) => <span>{name}</span>
-)
 
 const mapPersonMethodsProps = (swapiService) => {
     return {
@@ -40,17 +31,25 @@ const mapStarshipMethodsProps = (swapiService) => {
     }
 }
 
-const PersonList = withSwapiService(
-                                    withData(ListWithChildren),
-                                    mapPersonMethodsProps)
+const PersonList = compose (
+                            withSwapiService(mapPersonMethodsProps),
+                            withData,
+                            withChildFuntion(renderName)
+                        )(ItemList)
 
-const PlanetList  = withSwapiService(
-                                    withData(ListWithChildren),
-                                    mapPlanetMethodsProps)
+                                    
+const PlanetList  = compose (
+                            withSwapiService(mapPlanetMethodsProps),
+                            withData,
+                            withChildFuntion(renderName)
+                        )(ItemList)
 
-const StarshipList = withSwapiService(
-                                    withData(ListWithChildren),
-                                    mapStarshipMethodsProps)
+
+const StarshipList = compose (
+                            withSwapiService(mapStarshipMethodsProps),
+                            withData,
+                            withChildFuntion(renderName)
+                        )(ItemList)
 
 export {
     PersonList,
