@@ -1,27 +1,18 @@
-import React, {Component} from "react";
-
+import React from "react";
+import {withRouter} from 'react-router-dom'
 import RowGrid from "../Row_Grid_Pattern";
 import { PersonDetails, PersonList } from "../sw_components";
 
-export default class PeoplePage extends Component{
+const  PeoplePage = ({history, match}) => {
 
-    state = {
-        selectedItem: null
-    }
-
-    onItemSelected = (selectedItem) => {
-        this.setState({ selectedItem })
-    }
-
-
-  render() {
-
-        const { selectedItem } = this.state
+    const {id} = match.params
         return (
             <RowGrid
-                    left={<PersonList onItemSelected={this.onItemSelected}/>}
-                     right={<PersonDetails itemId={selectedItem}/>}/>
+                    left={<PersonList onItemSelected={(id) => history.push(id)}/>}
+                     right={<PersonDetails itemId={id}/>}/>
         )
-}
+
 
 }
+
+export default withRouter(PeoplePage)

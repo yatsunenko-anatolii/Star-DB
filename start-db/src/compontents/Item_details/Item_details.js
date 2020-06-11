@@ -58,7 +58,7 @@ export default class ItemDetails extends Component {
 
     return (
       <div className="Person_details">
-        <img src={image} className="Person_details_img" alt="Air Space" title="AirSpace"></img>
+        <img src={image} className="Person_details_img" alt={name} title={name}></img>
         
         <div className="Person_details_list">
           <h4><span>{name}</span></h4>
