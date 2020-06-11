@@ -107,25 +107,3 @@ export default class SwapiService {
 
 
 }
-
-//This is trial example
-// const swapi = new SwapiService()
-// swapi.getAllPeople()
-//         .then((people) => {
-//           people.forEach((p) => {
-//             console.log(p.eye_color)
-//           })
-//         })
-//         .catch((error) => {
-//           console.log(error)
-//         })
-// swapi.getPerson(4)
-//         .then((p)=> {
-//           console.log(p.name)
-//         })
-// swapi.getAllPlanets()
-//         .then((body) => {
-//           body.forEach((elem) => {
-//               console.log(elem.diameter)
-//           })
-//         })
