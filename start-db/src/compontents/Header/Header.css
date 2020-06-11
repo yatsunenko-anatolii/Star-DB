@@ -1,3 +1,5 @@
+
+
 .Header {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -6,10 +8,13 @@
   border-radius: 10px;
 }
 
+.Header a {
+  text-decoration: none;
+}
+
 .Header_logo {
   margin-right: 2rem;
 }
-
 
 .Header_list ul {
   display: flex;
@@ -18,7 +23,7 @@
 }
 
 .Header_list ul li {
-  line-height: center;
+  text-decoration: none;
   list-style: none;
   margin: 0;
   padding: .5rem 1rem;
